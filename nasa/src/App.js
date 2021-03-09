@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   getPhoto = date => {
-    fetch(`https://api.nasa.gov/planetary/apod?concept_tags=True&7qehGfBhlRKCZEkiDsq5tK16PrhhjiPagaIU5mDS`)
+    fetch(`https://api.nasa.gov/planetary/apod?date=${date}&api_key=7qehGfBhlRKCZEkiDsq5tK16PrhhjiPagaIU5mDS`)
     .then(response => response.json())
     .then(photoData => this.setState({ photo: photoData }))
   }
