@@ -16,7 +16,7 @@ class App extends Component {
     this.getSnapshotBeforeUpdate(dateFromInput)
   }
 
-  getPhoto = daTE => {
+  getPhoto = date => {
     fetch(`https://api.nasa.gov/planetary/apod?concept_tags=True&7qehGfBhlRKCZEkiDsq5tK16PrhhjiPagaIU5mDS`)
     .then(response => response.json())
     .then(photoData => this.setState({ photo: photoData }))
@@ -25,7 +25,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        
+        <h1>🛰🚀🌙</h1>
+        <Date changeDate={this.changeDate} />
+        <Pics pics={this.state.photo} />
       </div>
     )
   }

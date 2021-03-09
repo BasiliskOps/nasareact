@@ -2,9 +2,9 @@ import React from 'react'
 
 const Pics = props => (
     <div>
-        <h3>{props.photo.title}</h3>
-        <img src={props.photo.url} alt={props.photo.title} />
-        <p>{props.photo.explanation}</p>
+        <h3>{props.pics.title}</h3>
+        <img src={props.pics.url} alt={props.pics.title} />
+        <p>{props.pics.explanation}</p>
     </div>
 )
 
