@@ -26,8 +26,9 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className='body'>
         <h1>🌖🌗🌘🌑🌒🌓🌔</h1>
+        <h1>NASA Astrology Photos</h1>
         <Date changeDate={this.changeDate} />
         <Pics pics={this.state.pics} />
       </div>
